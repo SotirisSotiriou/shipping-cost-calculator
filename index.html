@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <form action="">
+        <div id="page" align="center">
+            <h1>Shipping Calculator Project</h1>
+            <h2>Calculate Your Order</h2>
+            <table>
+                <!-- row 1 -->
+                <tr>
+                    <td><p>Select Product: </p></td>
+                    <td>
+                        <select name="product" id="product">
+                            <option value="NaN" id="Default">Please Select a Product</option>
+                            <option value="1.10" id="MilkOption">Milk</option>
+                            <option value="2.50">Cheese</option>
+                            <option value="4.00">Smoke</option>
+                        </select>
+                    </td>
+                </tr>
+                <!-- row 2 -->
+                <tr>
+                    <td><p>Quantity: </p></td>
+                    <td><input type="text" id="quantity"></td>
+                </tr>
+                <!-- row 3 -->
+                <tr>
+                    <td><p>Shipping State (Tax Purposes): </p></td>
+                    <td>
+                        <select name="state" id="state">
+                            <option value="NaN">lowa</option>
+                            <option value="0.24">Greece</option>
+                            <option value="0.13">Germany</option>
+                            <option value="0.05">Bulgaria</option>
+                        </select>
+                    </td>
+                </tr>
+                <!-- row 4 -->
+                <tr>
+                    <td><p>Delivery Method: </p></td>
+                    <td>
+                        <select name="method" id="method">
+                            <option value="2">Standard UPS - 3 Days</option>
+                            <option value="4">Express - 1 Day</option>
+                        </select>
+                    </td>
+                </tr>
+                <!-- row 5 -->
+                <tr>
+                    <td><p>Your Total is: </p></td>
+                    <td><input type="text" id="total" value="$0.00" style="width: fit-content;" readonly></td>
+                </tr>
+            </table>
+
+            <input type="button" id="calculate" class="button" value="Calculate My Order Now!" onclick="calculateTotal();">
+            <input type="button" id="reset" class="button" value="Reser Form" onclick="reser();">
+        </div>
+    </form>
+</body>
+</html>

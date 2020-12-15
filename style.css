@@ -1,0 +1,44 @@
+#page{
+    margin: auto;
+    padding: 0 20 20 20;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(196, 196, 196);
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+table, td {
+    border-collapse: collapse;
+    border: 2px solid rgb(73, 73, 73);
+    background-color: white;
+
+}
+
+td {
+    padding: 5px;
+}
+
+.button {
+    padding: 10px;
+    margin: 20 10 10 10;
+    background-color: rgb(67, 184, 252);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border: 1px solid gray;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    outline: none;
+    transition: all 0,5s;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(63, 162, 219);
+    font-size: 14;
+    transition: 0.2s;
+}
+
+.button:active {
+    transform: translateY(4px);
+}
